@@ -1,4 +1,4 @@
-The website can be accessed [here](https://panktigosar.github.io/)
+The website can be accessed at https://panktigosar.github.io/
 
 
 
