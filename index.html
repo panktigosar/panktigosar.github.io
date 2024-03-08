@@ -12,7 +12,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/Panktilogo_2.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +26,8 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 
 
 
@@ -131,20 +132,66 @@
     </div>
   </header><!-- End Header -->
 
+
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/PanktiPicture1.jpeg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/Panktilogo_2.png)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Pankti Gosar</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Computational Biologist, Bioinformatician"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
+          <h1 class="wordCarousel">
+            <span><b>Pankti Gosar </b></span>
+            <div>
+                <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                <ul class="flip2">
+                    <h3><li>Computational Biologist</li></h3>
+                    <h2><li>Bioinformatician</li></h2>
+                </ul>
+            </div>
+            <style>
+                .wordCarousel {
+            font-size: 72px;
+            font-weight: 100;
+            color: #eee;
+            div {
+                overflow: hidden;
+                position: relative;
+                float: center;
+                height: 72px;
+                padding-top: 10px;
+                margin-top: -10px;
+                li {
+                    font-family: Arial;
+                    color: #eee;
+                    font-weight: 700;
+                    padding: 0 10px;
+                    height: 45px;
+                    margin-bottom: 45px;
+                    display: block;
+                }
+            }
+        }
+        
+        .flip2 { animation: flip2 3s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+        
+        
+        @keyframes flip2 {
+            0% { margin-top: -180px; }
+            5% { margin-top: -90px;  }
+            50% { margin-top: -90px; }
+            55% { margin-top: 0px; }
+            99.99% { margin-top: 0px; }
+            100% { margin-top: -180px; }
+        }
+        
+            </style>
+        </h1>
       </div>
     </div>
-  </div><!-- End Hero Section -->
+  </div>
+</div>
+  
+  <!-- End Hero Section -->
 
   <main id="main">
 
@@ -159,7 +206,7 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/PanktiPhoto.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="assets/img/PanktiPicture1.jpeg" class="img-fluid rounded b-shadow-a" alt="">
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
@@ -233,8 +280,11 @@
                       </h5>
                     </div>
                     <p class="text-justify">
-                      My top skills include wrangling, analyzing and visualizing multi-omics data from sequencing assays like RNA-seq, scRNA-seq, eCLIP-seq, ChIP-seq, ATAC-seq, DNA-seq, Microarray, WES, WGS for hypothesis driven study.
-                    </p>
+                      I am a graduate in Bioinformatics from Northeastern University and with a passion for leveraging data to obtain biologically meaningful insights. With multiple certifications and experience in R, Python, Linux/bash scripting and Nextflow, I am proficient in using various tools and methodologies to process, visualize, and interpret complex biological data sets.</p>
+                    <p class="text-justify">
+                      As a self-driven individual, I am committed to continuous learning and personal growth. Beyond my academic pursuits and internship at NextRNA Therapeutics, I have initiated various self-learning projects, exploring subjects that might not have been covered in my formal education.</p>
+                    <p class="text-justify">
+                      I am actively seeking an exciting opportunity to apply my skills and make meaningful contributions to cutting-edge research.</p>
                   </div>
                 </div>
               </div>
@@ -324,7 +374,7 @@
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
                 <button class="btn btn-load-more" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Computational Biology Co-op
+                  <b>Computational Biology Co-op</b>
                 </button>
               </h5>
             </div>
@@ -333,13 +383,22 @@
           <div class="card-body">
             <div class="row">
               <div class="col-md-6 text-left">
-                <p>NextRNA Therapeutics, Boston</p>
+                <p><b>NextRNA Therapeutics, Boston</b></p>
               </div>
               <div class="col-md-6 text-right">
                 <p>July 2022 - Dec 2022</p>
               </div>
               <div class="col-md-12 text-justify">
-                <p>Utilized statistical analysis techniques on high throughput sequencing data, among others, to identify and develop novel long non-coding RNA targets with therapeutic potential for a variety of diseases. Conducted data analyses sourced from public consortia leading to the discovery of promising lncRNA candidates. Proficiently adapted, debugged, and executed Nextflow pipelines to preprocess data, for alignment, quality control, coverage and feature count processes and create visualizations for differential expressions. Effectively communicated findings, interpretations, and graphical representations to a multidisciplinary team of scientists. Maintained thoroughly documented code to ensure transparency and reproducibility.
+                <p>
+                  <b>Discovery of Novel Targets</b>
+                  <ul>
+                    <li>Analyzed microarray data from various public resources to identify genes affected by specific cancers, aiming to understand their roles and expressions to discover novel therapeutic long non-coding RNAs.</li>
+                  </ul>
+                  <b>Computationally Validating lncRNA Targets through Crosslinking and Immunoprecipitation Sequencing</b>
+                  <ul>
+                    <li>Adapted an open-source eClip-seq Nextflow pipeline to process paired-end reads and utilized peak calling tools to troubleshoot data leakage issues.</li>
+                    <li>Utilized the generated data to comprehend the positions in RNA where proteins bind, gaining insights into the regulatory network formed by non-coding sequences in the transcriptome. This understanding contributes to assessing the impact on the cellular environment in cancerous cells, thereby computationally validating the identified targets.</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -352,7 +411,7 @@
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-learn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              Teaching Assistant
+              <b>Teaching Assistant</b>
             </button>
           </h5>
         </div>
@@ -361,13 +420,16 @@
           <div class="card-body">
             <div class="row">
               <div class="col-md-6 text-left">
-                <p>Indian Institute of Science, Bangalore</p>
+                <p><b>Indian Institute of Science, Bangalore</b></p>
               </div>
               <div class="col-md-6 text-right">
                 <p>August 2017 - May 2019</p>
               </div>
               <div class="col-md-12 text-justify">
-                Managed conducting trial runs of experiments, preparation for practical sessions, demonstrating operation of laboratory instruments for undergraduate students, answering queries of students alongside research scholars and PhD students, maintenance of Laboratory equipment and ordering supplies when required.
+                <ul>
+                  <li>Taught principles of experiments such as PCR, ELISA, electrophoresis, blotting and immunoblotting as well as usage of instruments such as PCR, FACS, SEM, TEM, brightfield and fluorescent microscopy and mass spectroscopy  </li>
+                  <li>Managed conducting trial runs of experiments, preparation for practical sessions, demonstrating operation of laboratory instruments for undergraduate students, answering queries of students alongside research scholars and PhD students, maintenance of Laboratory equipment and ordering supplies when required.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -379,7 +441,7 @@
         <div class="card-header" id="headingThree">
           <h5 class="mb-0">
             <button class="btn btn-load-more" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-              Lecturer
+            <b>Lecturer</b>
             </button>
           </h5>
         </div>
@@ -388,7 +450,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-md-6 text-left">
-                <p>Guru Nanak College of Arts, Science and Commerce, Mumbai</p>
+                <p><b>Guru Nanak College of Arts, Science and Commerce, Mumbai</b></p>
               </div>
               <div class="col-md-6 text-right">
                 <p>July 2011 - March 2016</p>
